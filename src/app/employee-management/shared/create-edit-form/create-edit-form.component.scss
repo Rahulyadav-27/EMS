@@ -1,0 +1,61 @@
+
+.ma-form-group {
+    margin-bottom: 1rem;
+}
+.ma-form-field {
+    display: flex;
+    flex-direction: column;
+}
+.ma-form-field label {
+    margin-bottom: 0.5rem;
+}
+.ma-form-field input,
+.ma-form-field select,
+.ma-form-field textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+.ma-form-field input:focus,
+.ma-form-field select:focus,
+.ma-form-field textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.ma-form-field input.ng-invalid,
+.ma-form-field select.ng-invalid,
+.ma-form-field textarea.ng-invalid {
+    border-color: #dc3545;
+}
+.ma-form-field input.ng-valid,
+.ma-form-field select.ng-valid,
+.ma-form-field textarea.ng-valid {
+    border-color: #28a745;
+}
+.create-edit-form {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+    .form-group {
+        display: contents;
+        
+        .input-group {
+            width: 20%;
+            display: inline-flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+}

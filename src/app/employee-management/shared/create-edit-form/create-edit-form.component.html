@@ -1,0 +1,13 @@
+<div class="create-edit-form">
+    <div class="title">
+        <h2>{{ isEditMode ? 'Edit Employee' : 'Create Employee' }}</h2>
+    </div>
+    <form [formGroup]="employeeForm">
+        <div class="form-group" *ngIf="!isEditMode">
+            <div class="input-group" *ngFor="let field of fields">
+                <label [for]="field.key">{{ field.label }}:</label>
+                <input [id]="field.key" [formControlName]="field.key" [type]="field.type" class="form-control" [placeholder]="field.key"/>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+/* breadcrumb.component.css */
+nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    margin: 10px 0;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+}
+.breadcrumb span {
+  color: #6c757d;
+}
